@@ -15,7 +15,7 @@ gibbs(logpost,start,m,scale,data)
   \item{scale}{vector of scale parameters for the random walk Metropolis steps}
   \item{data}{data that is used in the function logpost}
 }
-}
+
 \value{
 \item{par}{a matrix of simulated values where each row corresponds to a value of the vector parameter}
 \item{accept}{vector of acceptance rates of the Metropolis steps of the algorithm}

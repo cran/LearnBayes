@@ -14,7 +14,7 @@ bayesresiduals(lmfit,post,k)
 sigma, vector of simulated draws of sampling standard deviation}
   \item{k}{cut-off value that defines an outlier}
 }
-}
+
 \value{
 vector of posterior outlying probabilities
 }

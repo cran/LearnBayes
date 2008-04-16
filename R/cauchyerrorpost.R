@@ -1,10 +1,7 @@
-cauchyerrorpost=function(theta,data)
+cauchyerrorpost=function(theta, data)
 {
-mu=theta[,1]; lsigma=theta[,2]
-sigma=exp(lsigma)
-val=0*mu
-for (i in 1:length(data))
-	{val=val+log(dt((data[i]-mu)/sigma,df=1)/sigma)}
-return(val)
-}
+logf=function(data,theta)
+  log(dt((data-theta[1])/exp(theta[2]),df=1)/exp(theta[2]))
 
+return(sum(logf(data,theta)))
+}

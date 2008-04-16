@@ -13,7 +13,7 @@ histprior(p,midpts,prob)
   \item{midpts}{vector of midpoints of the intervals}
   \item{prob}{vector of probabilities of the intervals}
 }
-}
+
 \value{
 vector of values of the probability density
 }

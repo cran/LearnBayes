@@ -14,7 +14,7 @@ discint(dist, prob)
   the probabilities}
   \item{prob}{probability content of interest}
 }
-}
+
 \value{
   \item{prob}{exact probability content of interval}
   \item{set}{set of values of the probability interval}

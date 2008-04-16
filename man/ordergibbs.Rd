@@ -12,7 +12,7 @@ ordergibbs(data,m)
   \item{data}{data matrix with first two columns observed sample means and sample sizes}
   \item{m}{number of cycles of Gibbs sampling}
 }
-}
+
 \value{
   matrix of simulated draws of the normal means where each row represents one simulated draw
 }

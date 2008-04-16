@@ -9,22 +9,20 @@ proposed by Howard in a Statistical Science paper in 1998.
 howardprior(xy,par)
 }
 \arguments{
-  \item{xy}{matrix of parameter values where each row represents a value of the proportions (p1, p2)}
+  \item{xy}{vector of proportions p1 and p2}
   \item{par}{vector containing parameter values alpha, beta, gamma, delta, sigma}
 }
-}
+
 \value{
-vector of values of the log posterior where each value corresponds to each row of the parameters in xy
+value of the log posterior
 }
 
 \author{Jim Albert}
 
 \examples{
-par=c(1,1,1,1,2)
-p1=array(c(.1, .5),c(1,2))
-p2=array(c(.3, .8),c(1,2))
-xy=cbind(p1,p2)
-howardprior(xy,par)
+param=c(1,1,1,1,2)
+p=c(.1,.5)
+howardprior(p,param)
 }
 
 \keyword{models}

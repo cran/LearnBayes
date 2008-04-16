@@ -11,7 +11,7 @@ regroup(data,g)
   \item{data}{a matrix}
   \item{g}{a positive integer beween 1 and the number of rows of data}
 }
-}
+
 \value{
  reduced matrix found by summing over rows
 }

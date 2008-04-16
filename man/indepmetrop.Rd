@@ -10,9 +10,9 @@ indepmetrop(logpost,proposal,start,m,data)
 \arguments{
  \item{logpost}{function defining the log posterior density}
   \item{proposal}{a list containing mu, an estimated mean and var, an estimated variance-covariance matrix, of the normal proposal density} 
-  \item{start}{array with a single row that gives the starting value of the parameter vector}
+  \item{start}{vector containing the starting value of the parameter}
   \item{m}{the number of iterations of the chain}
-  \item{data}{data that is used in the function logpost}}
+  \item{data}{data that is used in the function logpost}
 }
 \value{
 \item{par}{a matrix of simulated values where each row corresponds to a value of the vector parameter}

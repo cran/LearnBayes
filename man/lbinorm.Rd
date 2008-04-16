@@ -8,12 +8,12 @@ Computes the logarithm of a bivariate normal density
 lbinorm(xy,par)
 }
 \arguments{
-  \item{xy}{matrix of values where each row corresponds to a value of (x, y)}
+  \item{xy}{vector of values of two variables x and y}
   \item{par}{list with components m, a vector of means, and v, a variance-covariance matrix}
 }
-}
+
 \value{
-vector of values of the kernel of the log density
+value of the kernel of the log density
 }
 
 \author{Jim Albert}
@@ -21,9 +21,9 @@ vector of values of the kernel of the log density
 \examples{
 mean=c(0,0)
 varcov=diag(c(1,1))
-values=rbind(c(0,0),c(1,1))
-par=list(m=mean,v=varcov)
-lbinorm(values,par)
+value=c(1,1)
+param=list(m=mean,v=varcov)
+lbinorm(value,param)
 }
 
 \keyword{models}

@@ -10,12 +10,12 @@ prior placed on the logits
 logctablepost(theta,data)
 }
 \arguments{
-  \item{theta}{matrix of parameter values where each row represents (difference of logits, sum of logits)}
+  \item{theta}{vector of parameter values "difference of logits" and "sum of logits")}
   \item{data}{vector containing number of successes and failures for first sample, and then second sample}
 }
-}
+
 \value{
-vector of values of the log posterior where each value corresponds to each row of the parameters in theta
+value of the log posterior
 }
 
 \author{Jim Albert}
@@ -23,8 +23,7 @@ vector of values of the log posterior where each value corresponds to each row o
 \examples{
 s1=6; f1=2; s2=3; f2=10
 data=c(s1,f1,s2,f2)
-theta1=c(2,4); theta2=c(1,1)
-theta=rbind(theta1,theta2)
+theta=c(2,4)
 logctablepost(theta,data)
 }
 

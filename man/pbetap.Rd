@@ -14,7 +14,7 @@ pbetap(ab, n, s)
   \item{n}{size of future binomial sample}
   \item{s}{vector of number of successes for future binomial experiment}
 }
-}
+
 \value{
   vector of predictive probabilities for the values in the vector s
 }

@@ -8,19 +8,16 @@
 normchi2post(theta,data)
 }
 \arguments{
-  \item{theta}{matrix of parameter values where each row is a value of (M, S2)}
+  \item{theta}{vector of parameter values M and S2}
   \item{data}{vector containing the sample observations}
 }
-}
 \value{
-a vector of values of the log posterior where the values corresond to the rows in theta
+value of the log posterior
 }
 \author{Jim Albert}
 
 \examples{
-parameter1=c(20,5)
-parameter2=c(25,5)
-parameter=rbind(parameter1,parameter2)
+parameter=c(25,5)
 data=c(20, 32, 21, 43, 33, 21, 32)
 normchi2post(parameter,data)
 }

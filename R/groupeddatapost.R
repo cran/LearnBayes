@@ -1,15 +1,8 @@
-groupeddatapost=function(theta,data)
+groupeddatapost=function (theta, data) 
 {
-cpoints=data$b
-nbins=length(cpoints)
-freq=data$f
-m=theta[,1]; logsigma=theta[,2]
-
-z=0*m; s=exp(logsigma)
-z=freq[1]*log(pnorm(cpoints[1],m,s))
-for (j in 1:(nbins-1))
-  z=z+freq[j+1]*log(pnorm(cpoints[j+1],m,s)-pnorm(cpoints[j],m,s))
-z=z+freq[nbins]*log(1-pnorm(cpoints[nbins],m,s))
-
-return(z)
+    dj=function(f,int.lo,int.hi,mu,sigma)
+      f*log(pnorm(int.hi,mu,sigma)-pnorm(int.lo,mu,sigma))
+    mu = theta[1]
+    sigma = exp(theta[2])
+    sum(dj(data$f,data$int.lo,data$int.hi,mu,sigma))
 }

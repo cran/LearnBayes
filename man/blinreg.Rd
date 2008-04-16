@@ -13,7 +13,7 @@ blinreg(y,X,m)
   \item{X}{design matrix}
   \item{m}{number of simulations desired}
 }
-}
+
 \value{
 \item{beta}{matrix of simulated draws of beta where each row corresponds to one draw}
 \item{sigma}{vector of simulated draws of the error standard deviation}

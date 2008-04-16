@@ -12,7 +12,7 @@ hiergibbs(data,m)
   \item{data}{data matrix with columns observed sample means, sample sizes, and values of two covariates}
   \item{m}{number of cycles of Gibbs sampling}
 }
-}
+
 \value{
   \item{beta}{matrix of simulated values of regression vector}
   \item{mu}{matrix of simulated values of cell means}

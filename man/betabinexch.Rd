@@ -8,12 +8,12 @@
 betabinexch(theta,data)
 }
 \arguments{
-  \item{theta}{matrix of parameter values where each row represents a value of (logit eta, log K)}
+  \item{theta}{vector of parameter values of logit eta and log K}
   \item{data}{a matrix with columns y (counts) and n (sample sizes)}
 }
-}
+
 \value{
-vector of values of the log posterior where each value corresponds to each row of the parameters in theta
+value of the log posterior
 }
 
 \author{Jim Albert}
@@ -22,9 +22,7 @@ vector of values of the log posterior where each value corresponds to each row o
 n=c(20,20,20,20,20)
 y=c(1,4,3,6,10)
 data=cbind(y,n)
-par1=c(-1,0)
-par2=c(-1,1)
-theta=rbind(par1,par2)
+theta=c(-1,0)
 betabinexch(theta,data)
 }
 

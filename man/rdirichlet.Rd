@@ -11,7 +11,7 @@ rdirichlet(n,par)
   \item{n}{number of simulations required}
   \item{par}{vector of parameters of the Dirichlet distribution}
 }
-}
+
 \value{
 matrix of simulated draws where each row corresponds to a single draw
 }

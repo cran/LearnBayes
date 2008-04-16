@@ -12,7 +12,7 @@ bprobit.probs(X1,fit)
   \item{X1}{matrix where each row corresponds to a covariate set}
   \item{fit}{simulated matrix of draws of the regression vector}
 }
-}
+
 \value{
 matrix of simulated draws of the fitted probabilities, where a column corresponds to a
 particular covariate set

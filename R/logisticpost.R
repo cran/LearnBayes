@@ -1,15 +1,17 @@
-logisticpost=function(beta,data)
+logisticpost=function (beta, data) 
 {
-x=data[,1]; n=data[,2]; y=data[,3]
-beta0=beta[,1]; beta1=beta[,2]
+    x = data[, 1]
+    n = data[, 2]
+    y = data[, 3]
 
-N=length(x)
-z=0*beta0
-for (i in 1:N)
-{
-lp=beta0+beta1*x[i]
-pi=exp(lp)/(1+exp(lp))
-z=z+y[i]*log(pi)+(n[i]-y[i])*log(1-pi)
-}
-return(z)
+    beta0 = beta[1]
+    beta1 = beta[2]
+    
+    logf=function(x,n,y,beta0,beta1)
+    {  lp = beta0 + beta1 * x
+       p = exp(lp)/(1 + exp(lp))
+       y * log(p) + (n - y) * log(1 - p)
+     }
+
+    return(sum(logf(x,n,y,beta0,beta1)))
 }

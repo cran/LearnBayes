@@ -22,8 +22,8 @@ matrix of simulated draws from the posterior where each row corresponds to a sin
 
 \examples{
 data(cancermortality)
-start=array(c(-7,6),c(1,2))
-fit=laplace(betabinexch,start,5,cancermortality)
+start=c(-7,6)
+fit=laplace(betabinexch,start,cancermortality)
 tpar=list(m=fit$mode,var=2*fit$var,df=4)
 theta=sir(betabinexch,tpar,1000,cancermortality)
 }

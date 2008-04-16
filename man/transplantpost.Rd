@@ -9,22 +9,20 @@ model for survival data
 transplantpost(theta,data)
 }
 \arguments{
-  \item{theta}{matrix of parameter values where each row represents a value of (log tau, log lambda, log p)}
+  \item{theta}{vector of parameter values of log tau, log lambda, and log p}
   \item{data}{data matrix with columns survival time, transplant indicator, time to transplant, and
 censoring indicator}
 }
-}
+
 \value{
-vector of values of the log posterior where each value corresponds to each row of the parameters in theta
+value of the log posterior
 }
 
 \author{Jim Albert}
 
 \examples{
 data(stanfordheart)
-par1=c(0,3,-1)
-par2=c(0,2,0)
-theta=rbind(par1,par2)
+theta=c(0,3,-1)
 transplantpost(theta,stanfordheart)
 }
 

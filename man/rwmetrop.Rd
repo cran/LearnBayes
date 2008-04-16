@@ -11,11 +11,11 @@ rwmetrop(logpost,proposal,start,m,par)
 \arguments{
   \item{logpost}{function defining the log posterior density}
   \item{proposal}{a list containing var, an estimated variance-covariance matrix, and scale, the Metropolis scale factor} 
-  \item{start}{array with a single row that gives the starting value of the parameter vector}
+  \item{start}{vector containing the starting value of the parameter}
   \item{m}{the number of iterations of the chain}
   \item{par}{data that is used in the function logpost}
 }
-}
+
 \value{
 \item{par}{a matrix of simulated values where each row corresponds to a value of the vector parameter}
 \item{accept}{the acceptance rate of the algorithm}

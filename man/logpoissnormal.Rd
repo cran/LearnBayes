@@ -13,7 +13,7 @@ logpoissnormal(theta,datapar)
   \item{datapar}{list with components data, vector of observations, and par, vector of
 parameters of the normal prior}
 }
-}
+
 \value{
 vector of values of the log posterior for all values in theta
 }

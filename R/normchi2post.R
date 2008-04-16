@@ -1,13 +1,12 @@
 normchi2post=function(theta,data)
 {
-mu=theta[,1]; sig2=theta[,2]
-n=length(data)
-z=0*mu
-for (i in 1:n)
-{
-z=z-(data[i]-mu)^2/2/sig2
-}
-z=z-(n/2+1)*log(sig2)
+    mu = theta[1]
+    sig2 = theta[2]
+   
+    logf=function(y,mu,sig2)
+       -(y-mu)^2/2/sig2-log(sig2)/2
 
-return(z)
+    z=sum(logf(data,mu,sig2))
+    z = z - log(sig2)
+    return(z)
 }

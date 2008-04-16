@@ -26,11 +26,10 @@ and degrees of freedom df}
 
 \examples{
 data(cancermortality)
-start=array(c(-7,6),c(1,2))
-fit=laplace(betabinexch,start,5,cancermortality)
+start=c(-7,6)
+fit=laplace(betabinexch,start,cancermortality)
 tpar=list(m=fit$mode,var=2*fit$var,df=4)
-myfunc=function(theta)
- return(theta[,2])
+myfunc=function(theta) return(theta[2])
 theta=impsampling(betabinexch,tpar,myfunc,1000,cancermortality)
 }
 

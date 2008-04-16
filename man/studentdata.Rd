@@ -21,6 +21,6 @@ footballscores
   \item{Job}{number of hours working on a job per week}
   \item{Drink}{usual drink at suppertime among milk, water, and pop}
 }
-}
+
 
 \keyword{datasets}

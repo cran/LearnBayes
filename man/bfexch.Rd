@@ -8,13 +8,13 @@ Computes the logarithm of the integral of the Bayes factor for testing homogenei
 bfexch(theta,datapar)
 }
 \arguments{
-  \item{theta}{vector of values of the logit of the prior mean hyperparameter}
+  \item{theta}{value of the logit of the prior mean hyperparameter}
   \item{datapar}{list with components data, matrix with columns y (counts) and n (sample sizes), and K, prior
 precision hyperparameter}
 }
-}
+
 \value{
-vector of values of the logarithm of the integral
+value of the logarithm of the integral
 }
 
 \author{Jim Albert}
@@ -25,7 +25,7 @@ n=c(10,10,10,10,10,10,10)
 data=cbind(y,n)
 K=20
 datapar=list(data=data,K=K)
-theta=c(-1,0,1,2)
+theta=1
 bfexch(theta,datapar)
 }
 

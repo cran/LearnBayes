@@ -18,6 +18,6 @@ footballscores
   \item{underdog.name}{name of underdog team}
   \item{week}{week number of the season}
 }
-}
+
 
 \keyword{datasets}

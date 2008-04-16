@@ -23,8 +23,8 @@ matrix of simulated draws from density of interest
 
 \examples{
 data(cancermortality)
-start=array(c(-7,6),c(1,2))
-fit=laplace(betabinexch,start,5,cancermortality)
+start=c(-7,6)
+fit=laplace(betabinexch,start,cancermortality)
 tpar=list(m=fit$mode,var=2*fit$var,df=4)
 theta=rejectsampling(betabinexch,tpar,-569.2813,1000,cancermortality)
 }

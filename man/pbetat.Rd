@@ -13,7 +13,7 @@ pbetat(p0,prob,ab,data)
   \item{ab}{vector of parameter values of the beta prior under the alternative hypothesis}
   \item{data}{vector containing the number of successes and number of failures}
 }
-}
+
 \value{
   \item{bf}{the Bayes factor
   in support of the null hypothesis}

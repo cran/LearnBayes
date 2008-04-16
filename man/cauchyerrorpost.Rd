@@ -10,21 +10,19 @@ prior distribution is taken on (M, log S)
 cauchyerrorpost(theta,data)
 }
 \arguments{
-  \item{theta}{matrix of parameter values where each row represents a value of (M, log S)}
+  \item{theta}{vector of parameter values of M and log S}
   \item{data}{vector containing sample of observations}
 }
-}
+
 \value{
-vector of values of the log posterior where each value corresponds to each row of the parameters in theta
+value of the log posterior
 }
 
 \author{Jim Albert}
 
 \examples{
 data=c(108, 51, 7, 43, 52, 54, 53, 49, 21, 48)
-theta1=array(c(40,0),c(1,2))
-theta2=array(c(50,1),c(1,2))
-theta=rbind(theta1,theta2)
+theta=c(40,1)
 cauchyerrorpost(theta,data)
 }
 

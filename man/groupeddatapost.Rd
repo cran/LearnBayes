@@ -9,23 +9,23 @@ observed in grouped form
 groupeddatapost(theta,data)
 }
 \arguments{
-  \item{theta}{matrix of parameter values where each row represents a value of (M, log S)}
-  \item{data}{list with components b, a vector of midpoints and f, the corresponding bin frequencies}
+  \item{theta}{vector of parameter values M and log S}
+  \item{data}{list with components int.lo, a vector of left endpoints,
+int.hi, a vector of right endpoints, and f, a vector of bin frequencies}
 }
-}
+
 \value{
-vector of values of the log posterior where each value corresponds to each row of the parameters in theta
+value of the log posterior
 }
 
 \author{Jim Albert}
 
 \examples{
-b=c(10,15,20,25,30)
+int.lo=c(-Inf,10,15,20,25)
+int.hi=c(10,15,20,25,Inf)
 f=c(2,5,8,4,2)
-data=list(b=b,f=f)
-par1=c(20,1)
-par2=c(22,0)
-theta=rbind(par1,par2)
+data=list(int.lo=int.lo,int.hi=int.hi,f=f)
+theta=c(20,1)
 groupeddatapost(theta,data)
 }
 
