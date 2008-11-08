@@ -20,7 +20,6 @@ laplace(logpost,mode,par)
 \item{var}{current estimate at the associated variance-covariance matrix}
 \item{int}{estimate at the logarithm of the normalizing constant}
 \item{converge}{indication (TRUE or FALSE) if the algorithm converged}
-\item{iter}{number of iterations of the algorithm}
 }
 
 \author{Jim Albert}

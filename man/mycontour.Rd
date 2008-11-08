@@ -7,12 +7,13 @@ contour lines are drawn at 10 percent, 1 percent, and .1 percent of
 the height at the mode.
 }
 \usage{
-mycontour(logf,limits,data)
+mycontour(logf,limits,data,...)
 }
 \arguments{
   \item{logf}{function that defines the logarithm of the  density}
   \item{limits}{limits (xlo, xhi, ylo, yhi) where the graph is to be drawn}
   \item{data}{vector or list of parameters associated with the function logpost}
+  \item{...}{further arguments to pass to contour}
 }
 
 \value{

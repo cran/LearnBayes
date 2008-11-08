@@ -1,4 +1,4 @@
-mycontour=function (logf, limits, data) 
+mycontour=function (logf, limits, data, ...) 
 {
 LOGF=function(theta, data)
         {
@@ -19,5 +19,5 @@ LOGF=function(theta, data)
     Z = LOGF(cbind(X[1:n2], Y[1:n2]), data)
     Z = Z - max(Z)
     Z = matrix(Z, c(ng, ng))
-    contour(x0, y0, Z, levels = seq(-6.9, 0, by = 2.3), lwd = 2)
+    contour(x0, y0, Z, levels = seq(-6.9, 0, by = 2.3), lwd = 2, ...)
 }

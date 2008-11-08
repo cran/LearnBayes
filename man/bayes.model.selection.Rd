@@ -15,7 +15,8 @@ bayes.model.selection(y, X, c, constant=TRUE)
 }
 
 \value{
-\item{mod.prob}{matrix specifying the model and the associated value of the log marginal density}
+\item{mod.prob}{data frame specifying the model, the value of the log marginal density and
+the value of the posterior model probability}
 \item{converge}{logical vector indicating if the laplace algorithm converged for each model}
 }
 

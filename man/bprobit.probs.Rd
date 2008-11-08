@@ -28,7 +28,7 @@ fit=bayes.probit(response,X,m)
 x1=c(1,3)
 x2=c(1,8)
 X1=rbind(x1,x2)
-fittedprobs=bprobit.probs(X1,fit)
+fittedprobs=bprobit.probs(X1,fit$beta)
 }
 
 \keyword{models}

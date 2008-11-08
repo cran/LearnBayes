@@ -3,15 +3,17 @@
 \title{Simulation from Bayesian linear regression model}
 \description{
  Gives a simulated sample from the joint posterior distribution of the regression
-vector and the error standard deviation for a linear regression model with a noninformative prior.
+vector and the error standard deviation for a linear regression model with a 
+ noninformative or g prior.
 }
 \usage{
-blinreg(y,X,m)
+blinreg(y,X,m,prior=NULL)
 }
 \arguments{
   \item{y}{vector of responses}
   \item{X}{design matrix}
   \item{m}{number of simulations desired}
+  \item{prior}{list with components c0 and beta0 of Zellner's g prior}
 }
 
 \value{

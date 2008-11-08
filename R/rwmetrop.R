@@ -1,4 +1,4 @@
-rwmetrop=function (logpost, proposal, start, m=1000, par) 
+rwmetrop=function (logpost, proposal, start, m, par) 
 {
     pb = length(start)
     Mpar = array(0, c(m, pb))

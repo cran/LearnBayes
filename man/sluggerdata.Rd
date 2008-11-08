@@ -1,5 +1,6 @@
 \name{sluggerdata}
 \alias{sluggerdata}
+\docType{data}
 \title{Hitting statistics for ten great baseball players}
 \description{
 Career hitting statistics for ten great baseball players
@@ -9,6 +10,8 @@ Career hitting statistics for ten great baseball players
 sluggerdata
 }
 \format{
+ A data frame with 199 observations on the following 13 variables.
+  \describe{
   \item{Player}{names of the ballplayer}
   \item{Year}{season played}
   \item{Age}{age of the player during the season}
@@ -22,6 +25,7 @@ sluggerdata
   \item{RBI}{runs batted in}
   \item{BB}{number of base on balls}
   \item{SO}{number of strikeouts}
+  }
 }
-
+\source{Sean Lahman's baseball database from www.baseball1.com.}
 \keyword{datasets}

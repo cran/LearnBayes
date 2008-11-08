@@ -3,7 +3,9 @@
 \title{Simulates from a probit binary response regression model using data augmentation and Gibbs sampling}
 \description{
  Gives a simulated sample from the joint posterior distribution of the regression
-vector for a binary response regression model with a probit link and a informative normal(beta, P) prior.
+vector for a binary response regression model with a probit link and a 
+informative normal(beta, P) prior.  Also computes the log marginal likelihood when
+a subjective prior is used.
 }
 \usage{
 bayes.probit(y,X,m,prior=list(beta=0,P=0))
@@ -16,7 +18,8 @@ bayes.probit(y,X,m,prior=list(beta=0,P=0))
 }
 
 \value{
-matrix of simulated draws of regression vector beta where each row corresponds to one draw
+\item{beta}{matrix of simulated draws of regression vector beta where each row corresponds to one draw}
+\item{log.marg}{simulation estimate at log marginal likelihood of the model}
 }
 \author{Jim Albert}
 
