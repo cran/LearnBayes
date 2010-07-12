@@ -9,7 +9,7 @@ of equal-width intervals
 histprior(p,midpts,prob)
 }
 \arguments{
-  \item{p}{vector of values for which density is to computed}
+  \item{p}{vector of values for which density is to be computed}
   \item{midpts}{vector of midpoints of the intervals}
   \item{prob}{vector of probabilities of the intervals}
 }

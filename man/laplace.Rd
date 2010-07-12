@@ -7,12 +7,12 @@ the associated variance-covariance matrix, and an estimate at the
 logarithm at the normalizing constant.
 }
 \usage{
-laplace(logpost,mode,par)
+laplace(logpost,mode,...)
 }
 \arguments{
   \item{logpost}{function that defines the logarithm of the posterior density}
   \item{mode}{vector that is a guess at the posterior mode}
-  \item{par}{vector or list of parameters associated with the function logpost}
+  \item{...}{vector or list of parameters associated with the function logpost}
 }
 
 \value{

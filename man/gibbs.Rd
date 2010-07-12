@@ -6,14 +6,14 @@
 posterior density defined by the user
 }
 \usage{
-gibbs(logpost,start,m,scale,data)
+gibbs(logpost,start,m,scale,...)
 }
 \arguments{
   \item{logpost}{function defining the log posterior density}
   \item{start}{array with a single row that gives the starting value of the parameter vector}
   \item{m}{the number of iterations of the chain}
   \item{scale}{vector of scale parameters for the random walk Metropolis steps}
-  \item{data}{data that is used in the function logpost}
+  \item{...}{data that is used in the function logpost}
 }
 
 \value{
