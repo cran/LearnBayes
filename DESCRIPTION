@@ -1,8 +1,8 @@
 Package: LearnBayes
 Type: Package
 Title: Functions for Learning Bayesian Inference
-Version: 2.11
-Date: 2010-7-12
+Version: 2.12
+Date: 2010-10-7
 Author: Jim Albert
 Maintainer: Jim Albert <albert@bgnet.bgsu.edu>
 LazyData: yes
@@ -15,6 +15,6 @@ Description: LearnBayes contains a collection of functions helpful in
         for regression models, hierarchical models, Bayesian tests, and
         illustrations of Gibbs sampling.
 License: GPL (>= 2)
-Packaged: 2010-07-12 15:55:21 UTC; Jimmie
+Packaged: 2012-10-29 08:57:14 UTC; ripley
 Repository: CRAN
-Date/Publication: 2010-07-25 11:05:55
+Date/Publication: 2012-10-29 08:57:14

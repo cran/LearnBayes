@@ -6,11 +6,11 @@ f0=logpost(start,...)
 arate=array(0,dim=c(1,p))
 
 th0=start
-th1=th0
 for (i in 1:m)
 {
   for (j in 1:p)
   {
+  th1=th0
   th1[j]=th0[j]+rnorm(1)*scale[j]
   f1=logpost(th1,...)
   u=runif(1)<exp(f1-f0)
