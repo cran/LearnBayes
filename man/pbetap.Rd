@@ -4,7 +4,7 @@
 \description{
  Computes predictive distribution for number of successes of
  future binomial experiment
- with a discrete distribution for the proportion.
+ with a beta prior distribution for the proportion.
 }
 \usage{
 pbetap(ab, n, s)
